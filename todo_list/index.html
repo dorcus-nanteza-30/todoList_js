@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+  <div class="container">
+    <h2> To-Do List</h2>
+    <form id="todo-form">  
+      <h4>What's on your to-do list?</h4>
+      <input type="text" name="content" id="content" placeholder="Enter your task">
+      <h4>Pick a category:</h4>
+      <div class="options">
+        <div>
+          <input type="radio" name="category" value="business">
+          <span class="bubble business"></span>
+          <label for="business">Business</label>  </div>
+        <div>
+          <input type="radio" name="category" value="personal">
+          <span class="bubble Personal"></span>
+          <label for="personal">Personal</label>  </div>
+      </div>
+      <button>Add</button>
+    </form>
+    
+    <div>
+        <ul id="list-container"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>  
+</body>
+</html>
