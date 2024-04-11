@@ -14,7 +14,7 @@ todoForm.addEventListener('submit', function(event) {
 
   // Create a new todo item element
   const todoItem = document.createElement('li');
-  todoItem.classList.add(selectedCategory.value); // Add category class
+  todoItem.classList.add(selectedCategory.value); 
 
   // Create the text element for the task content
   const todoText = document.createElement('span');
@@ -49,7 +49,7 @@ todoForm.addEventListener('submit', function(event) {
       // Editing mode: Replace text span with an input field
       const editInput = document.createElement('input');
       editInput.type = 'text';
-      editInput.value = todoText.textContent; // Pre-fill with current content
+      editInput.value = todoText.textContent; 
       todoItem.replaceChild(editInput, todoText);
 
       // Add a save button
@@ -58,7 +58,7 @@ todoForm.addEventListener('submit', function(event) {
       saveButton.textContent = 'Save';
       todoItem.appendChild(saveButton);
 
-      // Functionality for Save button (**Needs additional code**):
+      // Functionality for Save button :
       saveButton.addEventListener('click', function() {
         // Update the task content with the new input value
         todoText.textContent = editInput.value;
